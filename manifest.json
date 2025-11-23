@@ -1,6 +1,6 @@
 {
-  "name": "دفتر يمن ستلايت",
-  "short_name": "دفتر ستلايت",
+  "name": "يمن ستلايت",
+  "short_name": "يمن ستلايت",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
