@@ -1,8 +1,7 @@
-const CACHE_NAME = "يشبفشق-cache-v1";
+const CACHE_NAME = "daftr-clinet-v1";
 const urlsToCache = [
     "/index.html",
     "/client.html",
-    "/admin.html",
     "/css/style.css",
     "/js/script.js",
     "/img/دفتر-يمن-ستلايت-192.png",
