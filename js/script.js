@@ -45,14 +45,13 @@ async function login() {
         const sessionDuration = 30 * 60 * 1000;
         localStorage.setItem("session_expire", Date.now() + sessionDuration);
 
-        if (data.role === "client") {
-            localStorage.setItem("client_id", data.client_id);
-            localStorage.setItem("client_name", data.name);
-            window.location.href = "client.html";
-        } else if (data.role === "admin") {
-            localStorage.setItem("role", "admin");
-            window.location.href = "admin.html";
-        }
+if (data.role === "client") {
+    localStorage.setItem("client_id", data.client_id);
+    localStorage.setItem("client_name", data.name);
+    localStorage.setItem("role", "client");
+    window.location.href = "client.html";
+}
+
 
     } catch (err) {
         msg.innerText = "خطأ في الاتصال بالسيرفر";
