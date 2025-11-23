@@ -1,5 +1,5 @@
 // رابط API
-const API = "https://script.google.com/macros/s/AKfycbxDp5atXgNSds24rTt4nVoAFpH7cVlDfnO0b1yS-4We2y_VBwVfsDF0NQ7d1bVP0xDI/exec";
+const API = "https://script.google.com/macros/s/AKfycby3epRp211Nl8qtGfnau8FWyHRBOREixj3JIDMCRCvOh4uqsd7BoEjSG0cUBL7BpMo/exec";
 
 
 // فحص الجلسة عند تحميل الصفحة
