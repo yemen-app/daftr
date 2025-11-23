@@ -1,20 +1,18 @@
 // رابط API
 const API = "https://script.google.com/macros/s/AKfycbyqo_4LRAisFoN_QrUO6nTRez1o9AgvxCFLQJzxV3DbyKczaJN0EtAXwuDMXwUMlp5c/exec";
 
+
 // فحص الجلسة عند تحميل الصفحة
 document.addEventListener("DOMContentLoaded", () => {
     const sessionExpire = localStorage.getItem("session_expire");
-    const role = localStorage.getItem("role");
-    
+
     if (sessionExpire && Date.now() < Number(sessionExpire)) {
-        // إعادة التوجيه حسب الدور
-        if (role === "admin") window.location.href = "admin.html";
-        else if (localStorage.getItem("client_id")) window.location.href = "client.html";
+        if (localStorage.getItem("client_id")) window.location.href = "client.html";
     } else {
-        // انتهاء الجلسة
         localStorage.clear();
     }
 });
+
 
 // تسجيل الدخول
 async function login() {
