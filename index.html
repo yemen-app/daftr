@@ -20,13 +20,10 @@
 </head>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const user = localStorage.getItem("user_type"); // client | admin | null
+    const client = localStorage.getItem("client_id");
 
-    if (user === "client") {
+    if (client) {
         window.location.href = "client.html";
-    } 
-    else if (user === "admin") {
-        window.location.href = "#";
     }
 });
 </script>
@@ -58,7 +55,6 @@ if ('serviceWorker' in navigator) {
 
 </body>
 </html>
-
 
 
 
